@@ -10,18 +10,12 @@
 <body>
   <div id="game" data-status="start">
     <div class="game-panel">
-      <audio id="bullet-bgm" src="sound-font/bullet-bg.mp3">
-        您的浏览器不支持 audio 标签。
-      </audio>
-      <audio id="main-bgm" src="sound-font/bg.mp3" loop="loop">
-        您的浏览器不支持 audio 标签。
-      </audio>
       <i class="iconfont icon-soundOn"></i>
       <section class="game-intro game-ui">
         <h1 class="section-title">射击游戏</h1>
         <p class="game-desc">这是一个令人欲罢不能的射击游戏，使用 ← 和 → 操作你的飞机，使用空格（space）进行射击。一起来消灭宇宙怪兽吧！<b>最后一关是究极大BOSS！</b></p>
         <p class="game-level">当前Level: 1</p>
-        <button class="js-play button">开始游戏</button>
+        <button class="js-play unabled">开始游戏</button>
       </section>
       <section class="game-failed game-ui">
         <h1 class="section-title">游戏结束</h1>
@@ -43,6 +37,15 @@
         <!-- 动画画板 -->
     </canvas>
   </div>
+  <script src="./js/util.js" ></script>
+  <script src="./js/element.js" ></script>
+  <script src="./js/config.js" ></script>
+  <script src="./js/bgm.js" ></script>
+  <script src="./js/enemy.js" ></script>
+  <script src="./js/boss.js" ></script>
+  <script src="./js/bullet.js" ></script>
+  <script src="./js/plane.js" ></script>
+  <script src="./js/keyboard.js" ></script>
   <!-- 主逻辑函数 -->
   <script src="./js/app.js" ></script>
 </body>
