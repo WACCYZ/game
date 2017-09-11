@@ -77,7 +77,7 @@ var GAME = {
   bindEvent: function() {
     var self = this;
     var playBtn = document.querySelector('.js-play');
-    var replayBtns = document.querySelectorAll('.js-replay');
+    var gamePanel= document.querySelector('.game-panel');
     var nextBtn = document.querySelector('.js-next');
     //声音按钮
     var soundBtn = document.querySelector('.iconfont');
@@ -86,13 +86,13 @@ var GAME = {
       self.play();
     };
     // 重新玩游戏按钮绑定
-    replayBtns.forEach(function (btn) {
-      btn.onclick = function() {
-        self.level = self.opts.level;
-        self.play();
-        self.grade = 0;
-      };
-    })
+    gamePanel.addEventListener('click', function(e) {
+        if (e.target.classList[0] === 'js-replay') {
+            self.level = self.opts.level;
+            self.play();
+            self.grade = 0;
+        }
+    }, false);
     //继续下一关游戏
     nextBtn.onclick = function() {
       self.play();

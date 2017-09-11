@@ -2,7 +2,7 @@
 * @Author: lihui
 * @Date:   2017-08-22 10:26:09
 * @Last Modified by:   lihui
-* @Last Modified time: 2017-08-28 18:29:26
+* @Last Modified time: 2017-09-07 21:16:14
 */
   /**
   * 游戏相关配置
@@ -10,7 +10,7 @@
   */
   var CONFIG = {
     status: 'start', // 游戏开始默认为开始中
-    level: 1, // 游戏默认等级
+    level: 6, // 游戏默认等级
     totalLevel: 6, // 总共6关
     numPerLine: 7, // 游戏默认每行多少个怪兽
     canvasPadding: 30, // 默认画布的间隔
